@@ -20,6 +20,14 @@ Start writing your content here...
 
 This example is, of course, very simple but it can be configured with a lot more.
 
+View some [example documents](https://github.com/neuralpain/edgeframe/blob/main/0.3.0/examples) available on the Github repository:
+
+  - [academic.typ](https://raw.githubusercontent.com/neuralpain/edgeframe/refs/heads/main/0.3.0/examples/academic.typ)
+  - [basic.typ](https://raw.githubusercontent.com/neuralpain/edgeframe/refs/heads/main/0.3.0/examples/basic.typ)
+  - [business.typ](https://raw.githubusercontent.com/neuralpain/edgeframe/refs/heads/main/0.3.0/examples/business.typ)
+  - [professional.typ](https://raw.githubusercontent.com/neuralpain/edgeframe/refs/heads/main/0.3.0/examples/professional.typ)
+  - [works.bib](https://raw.githubusercontent.com/neuralpain/edgeframe/refs/heads/main/0.3.0/examples/works.bib) (Get the bibliography data)
+
 ---
 
 ## Configuration
