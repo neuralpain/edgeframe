@@ -122,6 +122,22 @@ Both list types accept dictionaries with the following keys: `indent`, `body-ind
 
 ### Creating Custom Defaults
 
+These are the current defaults for edgeframe:
+
+```typ
+// Biased defaults for documents
+#let ef-defaults = (
+  paper: "a4",
+  margin: margin.a4,
+  paragraph: (
+    justify: false,
+    leading: 0.8em,
+    spacing: 1.5em,
+    first-line-indent: 0em,
+  ),
+)
+```
+
 If you frequently use a specific setup you can create a dictionary and pass it as an argument sink to `ef-document`.
 
 ```typ
@@ -142,6 +158,8 @@ If you frequently use a specific setup you can create a dictionary and pass it a
   watermark: "PERSONAL" // You can still edit specific keys
 )
 ```
+
+If you've created a default setup by standard international convention, you can submit it to the project on Github via [Github Issues](https://github.com/neuralpain/edgeframe/issues/new). It can be added to Edgeframe for use in a future release.
 
 ### Complex Header Example
 
