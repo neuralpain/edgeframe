@@ -20,7 +20,7 @@
   hf-text-size: none,
   // -------------------------------------------------------------------- HEADER
   header: (
-    text: (none, none, none), // explicit config notation
+    content: (none, none, none), // explicit config notation
     first-page: none,
     last-page: none,
     alignment: center,
@@ -31,7 +31,7 @@
   ),
   // -------------------------------------------------------------------- FOOTER
   footer: (
-    text: (none, none, none), // explicit config notation
+    content: (none, none, none), // explicit config notation
     first-page: none,
     last-page: none,
     alignment: center,
@@ -102,9 +102,9 @@
   */
 
   header = (
-    text: if "text" in header { header.text } else if type(header) == str {
+    content: if "content" in header { header.content } else if type(header) == str {
       header // no other values necessary; just display the header
-    } else { none }, // text key is missing; do not display
+    } else { none }, // content key is missing; do not display
     first-page: if "first-page" in header { header.first-page } else { none },
     last-page: if "last-page" in header { header.last-page } else { none },
     alignment: if "alignment" in header { header.alignment } else { center },
@@ -115,9 +115,9 @@
   )
 
   footer = (
-    text: if "text" in footer { footer.text } else if type(footer) == str {
+    content: if "content" in footer { footer.content } else if type(footer) == str {
       footer // no other values necessary; just display the footer
-    } else { none }, // text key is missing; do not display
+    } else { none }, // content key is missing; do not display
     first-page: if "first-page" in footer { footer.first-page } else { none },
     last-page: if "last-page" in footer { footer.last-page } else { none },
     alignment: if "alignment" in footer { footer.alignment } else { center },
@@ -246,16 +246,16 @@
         none // return nothing on the first page and default to displaying
              // the footer text instead
       } else if page-count {
-        if type(footer.text) == array {
+        if type(footer.content) == array {
           if page-count-position == right {
-            footer.text.at(2) = counter(page).display()
+            footer.content.at(2) = counter(page).display()
           } else if page-count-position == left {
-            footer.text.at(0) = counter(page).display()
+            footer.content.at(0) = counter(page).display()
           } else {
-            footer.text.at(1) = counter(page).display()
+            footer.content.at(1) = counter(page).display()
           }
         } else {
-          footer.text = counter(page).display()
+          footer.content = counter(page).display()
         }
       }
 
