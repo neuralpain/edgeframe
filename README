@@ -1,6 +1,9 @@
 edgeframe
 
-Custom margins and more for page setup or layout.
+A Typst package designed for rapid document
+scaffolding: handling headers, footers, margins,
+watermarks, and typography rules, all in a
+single, flexible function.
 
 https://typst.app/universe/package/edgeframe
 
